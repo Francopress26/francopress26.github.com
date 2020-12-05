@@ -1,0 +1,153 @@
+/*#C004D9 violeta fuerte
+  #AB05F2 purpura
+  #5A13F2 azul
+  #2745F2 azul electrico
+  #138AF2 celestito */
+html{
+  font-family: 'Roboto Mono', monospace;
+}
+  .container{
+    background: #DA22FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height:100vh;
+display:flex;
+align-items:center;
+justify-content: center;
+  }
+  .content{
+max-width: 960px;
+height: 80vh;
+width:100%;
+
+background-color: white;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+border-radius:1em;
+position: relative;
+
+overflow: scroll;
+  }
+
+  .content{
+    padding:1em;
+  }
+  td{
+    display: block;
+    width:100%;
+  }
+  td:nth-last-of-type(1){
+    font-size:2em;
+    font-weight:700;
+    color:#AB05F2;
+  }
+  th{
+    display:none;
+  }
+
+.actions{
+position: absolute;
+top:1em;
+right:1em;
+}
+
+img{
+  max-width: 100%;
+}
+
+.close{
+  background-color: #AB05F2;
+  border-radius: 50%;
+  height: 40px;
+  width:40px;
+  color:white;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-weight: 300;
+  cursor:pointer;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+a{
+  text-decoration: none;
+  color:#138AF2;
+}
+a:hover{
+  opacity: 0.8;
+}
+.title{
+  text-transform: uppercase;
+  text-decoration: underline;
+
+}
+.paragraph{
+line-height: 1.8em;
+font-weight:100;
+
+
+}
+.fa-star{
+  color:#AB05F2;
+
+}
+.fa-star-half{
+color:#AB05F2;
+}
+.table{
+width:100%;
+border-spacing:0;
+height: 70%;
+
+}
+
+.table td, .table th{
+  padding:1em;
+  text-align: left;
+}
+.table tr:nth-child(even){background-color:#f3e5f5}
+
+.title-item{
+
+border-bottom-style: solid;
+border-color:#C004D9;
+padding-bottom: 1em;
+border-width:2px;
+font-size: 2em;
+}
+
+.position{
+background-color: #C004D9;
+padding:8px;
+color:white;
+border-radius: 6px;
+margin-right: 0.5em;
+}
+.image{
+  float:left;
+  height:150px;
+}
+
+@media(min-height:550px){
+  .content{
+    height:500px;
+  }
+
+}
+@media(min-width:900px){
+  th{
+display: table-cell;
+  }
+td{
+  width:auto;
+display: table-cell;
+
+}
+td:nth-of-type(1){
+  font-size: 1em;
+}
+  .content{
+    padding: 1.8em;
+  }
+}
